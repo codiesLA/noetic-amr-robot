@@ -1,0 +1,30 @@
+# local_costmap:
+#   global_frame: odom
+#   static_map: false
+#   rolling_window: true
+#   width: 3.0
+#   height: 3.0
+#   origin_x: -1.5 
+#   origin_y: -1.5
+#   plugins:
+#   - {name: obstacle_layer,      type: "costmap_2d::ObstacleLayer  "}
+#   - {name: inflation_l,     type: "costmap_2d::InflationLayer"}
+#   - {name: cost_scaling_l,     type: "costmap_2d::InflationLayer"}
+
+global_frame: map
+rolling_window: true
+width: 3.0
+height: 3.0
+# origin_x: -1.0
+# origin_y: -1.0
+resolution: 0.05 #0.05
+update_frequency: 6.0 #6.0 2.0
+publish_frequency: 3.0
+transform_tolerance: 0.5 #0.5
+always_send_full_costmap: True
+
+
+plugins:
+  - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+  - {name: inflation_l,                 type: "costmap_2d::InflationLayer"}
+  - {name: cost_scaling_l,     type: "costmap_2d::InflationLayer"}

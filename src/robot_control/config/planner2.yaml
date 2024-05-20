@@ -1,0 +1,44 @@
+planners:
+  - name: 'GlobalPlanner'
+    type: 'global_planner/GlobalPlanner'
+
+controllers:
+  - name: 'DWAPlannerROS'
+    type: 'dwa_local_planner/DWAPlannerROS'
+
+GlobalPlanner:
+  #basic parameters
+  default_tolerance: 3.0  #default is 0.0
+  use_dijkstra: true  #default is true
+  old_navfn_behavior: false  #default is false
+  use_quadratic: true  #default is true
+  use_grid_path: false  #default is false
+  allow_unknown: true  #default is true
+  lethal_cost: 253  #default is 253
+  neutral_cost: 50  #default is 50
+  cost_factor: 3  #default is 3
+
+  #debug parameters
+  publish_potential: True
+
+DWAPlannerROS:
+  max_vel_x: 0.1
+  max_vel_y: 0.0
+  min_vel_y: 0.0
+  max_vel_trans: 0.1 
+  min_vel_trans: 0.0
+  max_vel_theta: 0.1 
+  min_vel_theta: 0
+
+  acc_lim_x: 2.47 
+  acc_lim_y: 0
+  acc_lim_theta: 4.18 
+
+  sim_time: 2.0
+  vx_samples: 3
+  vy_samples: 0
+  vth_samples: 20
+
+  holonomic_robot: false 
+
+  controller_frequency: 5.0

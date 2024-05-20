@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+   
+  <node pkg="nav_sequence" type="nav_sequence" name="waypoint_nav_node" output="screen" />
+
+  <!-- By default, do not start RViz from this launch file -->
+  <!-- <arg name="rviz" default="false" /> -->
+  <!-- Launch Rviz configured for navigation -->
+  <!-- <arg name="rvizconfig" default="$(find nav_sequence)/config/rviz_nav.rviz"/>  -->
+  <!-- Set config file --> 
+  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" if="$(arg use_rviz)" /> -->
+  
+</launch>

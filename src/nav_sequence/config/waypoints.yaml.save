@@ -1,0 +1,29 @@
+waypoints:
+  - point:
+      x: -1.5
+      y: 8.8
+      th: 50 # in degree
+  - point:
+      x: -1.5
+      y: 8.8
+      th: 136 # in degree     
+  - point:
+      x: 0.8
+      y: 5.3
+      th: -136 # in degree 
+  - point:
+      x: -1.5
+      y: 8.8
+      th: -136 # in degree 
+  - point:
+      x: -1.68
+      y: 7.4
+      th: -136 # in degree #0.005410243500890815
+#   - point:
+#       x: 4.217953681945801
+#       y: 0.38314366340637207
+#       th: 0 # in degree 
+  - point:
+      x: -1.68
+      y: 7.4
+      th: -50 # in degree 
